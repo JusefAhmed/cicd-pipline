@@ -21,6 +21,6 @@ jobs:
     - name: Build the Docker image
       run: docker build -t cicd-pipeline .
     - name: Tagging image
-      run: docker tag cicd-pipeline:latest saadsoa/cicd-pipeline:latest
+      run: docker tag cicd-pipeline:latest jusefa/cicd-pipeline:latest
     - name: Push to Dockerhub
-      run: docker push saadsoa/cicd-pipeline:latest
+      run: docker push jusefa/cicd-pipeline:latest
