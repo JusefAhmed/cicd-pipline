@@ -4,12 +4,13 @@ on:
     workflows: ["CI Pipeline"]
     types:
       - completed 
-      jobs:
+      
+jobs:
 
   build:
 
     runs-on: self-hosted
-steps:
+    steps:
     - name: Pull Docker image
       run: sudo docker pull jusefa/cicd-pipeline:latest
     - name: Delete Old docker container
